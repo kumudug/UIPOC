@@ -9,24 +9,24 @@ var products = [
         id: 1,
         name: 'product1',
         description: 'product 1 desc',
-        price: 10
+        price: 20
     },
     {
         id: 2,
         name: 'product2',
         description: 'product 2 desc',
-        price: 10
+        price: 33
     },
     {
         id: 3,
         name: 'product3',
         description: 'product 3 desc',
-        price: 10
+        price: 18
     },
     {
         id: 4,
         name: 'product4',
         description: 'product 4 desc',
-        price: 10
+        price: 12
     }
 ];
