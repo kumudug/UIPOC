@@ -1,3 +1,5 @@
+//TODO: Convert this to json
+
 var customers = [
     {
         id: 0,
