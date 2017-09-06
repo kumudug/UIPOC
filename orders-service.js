@@ -21,7 +21,7 @@ var addProduct = function(id, qty){
     var index = _findProductIndexInOrder(id);
     
     if(index > -1){
-        order[i].quantity += qty;
+        order[index].quantity += qty;
     } else{
         order.push({
             productId: id,
@@ -37,10 +37,10 @@ var removeProduct = function(id, qty){
     var index = _findProductIndexInOrder(id);
     
     if(index > -1 && order[i].quantity >= qty){
-        if(order[i].quantity === qty){
+        if(order[index].quantity === qty){
             order.splice(index, 1);
         } else{
-            order[i].quantity -= qty;
+            order[index].quantity -= qty;
         }
     } else{
         throw 'Product not found or invalid product quantity';
